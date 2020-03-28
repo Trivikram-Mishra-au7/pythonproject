@@ -4,17 +4,17 @@
 A maze is a 2D matrix in which some cells are blocked. One of the cells is the source cell, from where we have to start. And another one of them is the destination, where we have to reach. We have to find a path from the source to the destination without moving into any of the blocked cells. To solve this puzzle, we first start with the source cell and move in a direction where the path is not blocked. If taken path makes us reach to the destination then the puzzle is solved else, we come back and change our direction of the path taken. We are going to implement the same logic in our code also
 
 ### Algorithm
-Firstly, we will make a matrix to represent the maze, and the elements of the matrix will be either 0 or 1. 1 will represent the blocked cell and 0 will represent the cells in which we can move. The matrix for the maze shown above is:
+Firstly, we will make a matrix to represent the maze, and the elements of the matrix will be either 0 or 1. 0 will represent the blocked cell and 1 will represent the cells in which we can move. The matrix for the maze shown above is:
 
-0 1 0 1 1
+1 1 0 1 1
 
-0 0 0 0 0
+1 1 1 1 0
 
-1 0 1 0 1
+0 0 0 1 0
 
-0 0 1 0 0
+0 0 1 1 1
 
-1 0 0 1 0
+1 0 0 0 1
 
 Now, we will make one more matrix of the same dimension to store the solution. Its elements will also be either 0 or 1. 1 will represent the cells in our path and rest of the cells will be 0. The matrix representing the solution is:
 
