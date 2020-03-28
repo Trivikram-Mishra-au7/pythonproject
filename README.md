@@ -33,8 +33,9 @@ Thus, we now have our matrices. Next, we will find a path from the source cell t
 Check for the current cell, if it is the destination cell, then the puzzle is solved. If not, then we will try to move downward and see if we can move in the downward cell or not (to move in a cell it must be vacant and not already present in the path). If we can move there, then we will continue with the path taken to the next downward cell. If not, we will try to move to the rightward cell. And if it is blocked or taken, we will move upward. Similarly, if we can't move up as well, we will simply move to the left cell. If none of the four moves (down, right, up, or left) are possible, we will simply move back and change our current path (backtracking).
 
 #### Execution
-To run this Project in your device first install it from main.exe file the edit your desired input in the input.txt file and the run (run.bat) file and you will get you output in output.txt file with time and date history.
+To run this Project in your device first install it from main.exe file then edit your desired input in the input.txt file and then run (run.bat) file and you will get your output in output.txt file with time and date history.
 
 ##### Modules Used
 1 . argparse - For creating a Command line interface
+
 2 . datetime - For date and time history.
